@@ -29,7 +29,14 @@ class StartUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        designSetUp()
+    }
+    
+    func designSetUp() {
+        
+        loginButton.solidButton()
+        loginWithAppleButton.appleButton()
+        
     }
 
     @IBAction func loginTouched(_ sender: UIButton) {

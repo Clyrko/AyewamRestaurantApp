@@ -16,6 +16,7 @@
 		AC30F077242280140007D72B /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */; };
 		AC30F07A242282FD0007D72B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30F079242282FD0007D72B /* Colors.xcassets */; };
 		AC30F07D2422BAFD0007D72B /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */; };
+		AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07F2422C5010007D72B /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		AC30F079242282FD0007D72B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		AC30F07F2422C5010007D72B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		AC30F07324227F2C0007D72B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC30F07E2422C2990007D72B /* Extensions */,
 				AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */,
 				AC30F07424227F600007D72B /* Theme.swift */,
 				AC30F079242282FD0007D72B /* Colors.xcassets */,
@@ -90,6 +93,14 @@
 				AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC30F07E2422C2990007D72B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC30F07F2422C5010007D72B /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC30F07D2422BAFD0007D72B /* StartUpViewController.swift in Sources */,
+				AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */,
 				AC30F07524227F600007D72B /* Theme.swift in Sources */,
 				AC30F060242268910007D72B /* AppDelegate.swift in Sources */,
 				AC30F062242268910007D72B /* SceneDelegate.swift in Sources */,
