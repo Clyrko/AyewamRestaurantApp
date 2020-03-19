@@ -15,11 +15,8 @@
 		AC30F07524227F600007D72B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07424227F600007D72B /* Theme.swift */; };
 		AC30F077242280140007D72B /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */; };
 		AC30F07A242282FD0007D72B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30F079242282FD0007D72B /* Colors.xcassets */; };
-		AC30F07D2422BAFD0007D72B /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */; };
 		AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07F2422C5010007D72B /* UIButtonExtension.swift */; };
-		AC30F0822422E5340007D72B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F0812422E5340007D72B /* SignUpViewController.swift */; };
-		AC30F0842422E5600007D72B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F0832422E5600007D72B /* HomeViewController.swift */; };
-		AC30F0862422E5B80007D72B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F0852422E5B80007D72B /* ForgotPasswordViewController.swift */; };
+		AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334B2423C12300235EF0 /* StartUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +30,9 @@
 		AC30F07424227F600007D72B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		AC30F079242282FD0007D72B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		AC30F07F2422C5010007D72B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
-		AC30F0812422E5340007D72B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		AC30F0832422E5600007D72B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AC30F0852422E5B80007D72B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		AC30F0872422F5B30007D72B /* AyewamRestaurantApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AyewamRestaurantApp.entitlements; sourceTree = "<group>"; };
+		AC70334B2423C12300235EF0 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +92,7 @@
 		AC30F07B2422986B0007D72B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC30F07C2422BAFD0007D72B /* StartUpViewController.swift */,
-				AC30F0812422E5340007D72B /* SignUpViewController.swift */,
-				AC30F0832422E5600007D72B /* HomeViewController.swift */,
-				AC30F0852422E5B80007D72B /* ForgotPasswordViewController.swift */,
+				AC70334B2423C12300235EF0 /* StartUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,13 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC30F0862422E5B80007D72B /* ForgotPasswordViewController.swift in Sources */,
-				AC30F0822422E5340007D72B /* SignUpViewController.swift in Sources */,
-				AC30F07D2422BAFD0007D72B /* StartUpViewController.swift in Sources */,
+				AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */,
 				AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */,
 				AC30F07524227F600007D72B /* Theme.swift in Sources */,
 				AC30F060242268910007D72B /* AppDelegate.swift in Sources */,
-				AC30F0842422E5600007D72B /* HomeViewController.swift in Sources */,
 				AC30F062242268910007D72B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
