@@ -26,9 +26,14 @@ class StartUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        designSetup()
     }
     
+    func designSetup() {
+        
+        errorLabel.alpha = 0
+        loginButton.solidButton()
+    }
 
 
     @IBAction func forgotPasswordTouched(_ sender: UIButton) {
