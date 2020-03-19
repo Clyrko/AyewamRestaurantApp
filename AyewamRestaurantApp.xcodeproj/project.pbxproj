@@ -38,6 +38,7 @@
 		AC30F0812422E5340007D72B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC30F0832422E5600007D72B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC30F0852422E5B80007D72B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		AC30F0872422F5B30007D72B /* AyewamRestaurantApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AyewamRestaurantApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		AC30F05E242268910007D72B /* AyewamRestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC30F0872422F5B30007D72B /* AyewamRestaurantApp.entitlements */,
 				AC30F05F242268910007D72B /* AppDelegate.swift */,
 				AC30F061242268910007D72B /* SceneDelegate.swift */,
 				AC30F07324227F2C0007D72B /* Resources */,
@@ -336,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AyewamRestaurantApp/AyewamRestaurantApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J83753GZ93;
 				INFOPLIST_FILE = AyewamRestaurantApp/Info.plist;
@@ -354,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AyewamRestaurantApp/AyewamRestaurantApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J83753GZ93;
 				INFOPLIST_FILE = AyewamRestaurantApp/Info.plist;

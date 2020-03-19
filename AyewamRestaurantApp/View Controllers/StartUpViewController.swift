@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class StartUpViewController: UIViewController {
     
@@ -36,6 +37,19 @@ class StartUpViewController: UIViewController {
         
         loginButton.solidButton()
         loginWithAppleButton.appleButton()
+        
+        // Login with Apple Button
+        
+//        let appleButton = ASAuthorizationAppleIDButton()
+//        appleButton.translatesAutoresizingMaskIntoConstraints = false
+//
+//        view.addSubview(appleButton)
+//        NSLayoutConstraint.activate([
+//            loginWithAppleButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+//            loginWithAppleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+//            loginWithAppleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+//
+//        ])
         
     }
 
