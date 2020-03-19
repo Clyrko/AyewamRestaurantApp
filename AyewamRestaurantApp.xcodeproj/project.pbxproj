@@ -17,6 +17,7 @@
 		AC30F07A242282FD0007D72B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30F079242282FD0007D72B /* Colors.xcassets */; };
 		AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07F2422C5010007D72B /* UIButtonExtension.swift */; };
 		AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334B2423C12300235EF0 /* StartUpViewController.swift */; };
+		AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334F2423F4E300235EF0 /* IconInTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AC30F07F2422C5010007D72B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		AC30F0872422F5B30007D72B /* AyewamRestaurantApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AyewamRestaurantApp.entitlements; sourceTree = "<group>"; };
 		AC70334B2423C12300235EF0 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		AC70334F2423F4E300235EF0 /* IconInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				AC30F068242268980007D72B /* Assets.xcassets */,
 				AC30F06A242268980007D72B /* LaunchScreen.storyboard */,
 				AC30F06D242268980007D72B /* Info.plist */,
+				AC70334F2423F4E300235EF0 /* IconInTextField.swift */,
 			);
 			path = AyewamRestaurantApp;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				AC30F07524227F600007D72B /* Theme.swift in Sources */,
 				AC30F060242268910007D72B /* AppDelegate.swift in Sources */,
 				AC30F062242268910007D72B /* SceneDelegate.swift in Sources */,
+				AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
