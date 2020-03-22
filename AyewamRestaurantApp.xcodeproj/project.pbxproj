@@ -79,7 +79,6 @@
 				AC30F07324227F2C0007D72B /* Resources */,
 				AC30F07B2422986B0007D72B /* View Controllers */,
 				AC30F065242268910007D72B /* Main.storyboard */,
-				AC30F068242268980007D72B /* Assets.xcassets */,
 				AC30F06A242268980007D72B /* LaunchScreen.storyboard */,
 				AC30F06D242268980007D72B /* Info.plist */,
 				AC70334F2423F4E300235EF0 /* IconInTextField.swift */,
@@ -93,6 +92,7 @@
 				AC30F07E2422C2990007D72B /* Extensions */,
 				AC30F076242280140007D72B /* SF-Pro-Text-Light.otf */,
 				AC30F07424227F600007D72B /* Theme.swift */,
+				AC30F068242268980007D72B /* Assets.xcassets */,
 				AC30F079242282FD0007D72B /* Colors.xcassets */,
 			);
 			path = Resources;
