@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,10 @@
 		AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F07F2422C5010007D72B /* UIButtonExtension.swift */; };
 		AC5F3E0E2425232100DF586B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E0D2425232100DF586B /* LoginViewController.swift */; };
 		AC5F3E102425264900DF586B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */; };
-		AC5F3E122425266000DF586B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E112425266000DF586B /* HomeViewController.swift */; };
 		AC6D42DC2428DA3600ABB6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */; };
+		AC6D42DE24293EA700ABB6D7 /* HomeMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D42DD24293EA700ABB6D7 /* HomeMenuTableViewController.swift */; };
+		AC6D42E22429420500ABB6D7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D42E12429420500ABB6D7 /* MenuItem.swift */; };
+		AC6D42E4242945B100ABB6D7 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D42E3242945B100ABB6D7 /* MenuItemCell.swift */; };
 		AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334B2423C12300235EF0 /* StartUpViewController.swift */; };
 		AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334F2423F4E300235EF0 /* IconInTextField.swift */; };
 /* End PBXBuildFile section */
@@ -42,8 +44,10 @@
 		AC30F0872422F5B30007D72B /* AyewamRestaurantApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AyewamRestaurantApp.entitlements; sourceTree = "<group>"; };
 		AC5F3E0D2425232100DF586B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		AC5F3E112425266000DF586B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC6D42DD24293EA700ABB6D7 /* HomeMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewController.swift; sourceTree = "<group>"; };
+		AC6D42E12429420500ABB6D7 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		AC6D42E3242945B100ABB6D7 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		AC70334B2423C12300235EF0 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		AC70334F2423F4E300235EF0 /* IconInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInTextField.swift; sourceTree = "<group>"; };
 		DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyewamRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +79,6 @@
 				5804C1BA2C98B5E543884167 /* Pods-AyewamRestaurantApp.debug.xcconfig */,
 				6973F675364F0444693A745D /* Pods-AyewamRestaurantApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +108,8 @@
 				AC30F061242268910007D72B /* SceneDelegate.swift */,
 				AC30F07324227F2C0007D72B /* Resources */,
 				AC30F07B2422986B0007D72B /* View Controllers */,
+				AC6D42E3242945B100ABB6D7 /* MenuItemCell.swift */,
+				AC6D42E12429420500ABB6D7 /* MenuItem.swift */,
 				AC30F065242268910007D72B /* Main.storyboard */,
 				AC30F06A242268980007D72B /* LaunchScreen.storyboard */,
 				AC30F06D242268980007D72B /* Info.plist */,
@@ -132,7 +137,7 @@
 				AC70334B2423C12300235EF0 /* StartUpViewController.swift */,
 				AC5F3E0D2425232100DF586B /* LoginViewController.swift */,
 				AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */,
-				AC5F3E112425266000DF586B /* HomeViewController.swift */,
+				AC6D42DD24293EA700ABB6D7 /* HomeMenuTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -263,14 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6D42DE24293EA700ABB6D7 /* HomeMenuTableViewController.swift in Sources */,
 				AC5F3E102425264900DF586B /* ForgotPasswordViewController.swift in Sources */,
 				AC5F3E0E2425232100DF586B /* LoginViewController.swift in Sources */,
 				AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */,
 				AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */,
 				AC30F07524227F600007D72B /* Theme.swift in Sources */,
-				AC5F3E122425266000DF586B /* HomeViewController.swift in Sources */,
 				AC30F060242268910007D72B /* AppDelegate.swift in Sources */,
 				AC30F062242268910007D72B /* SceneDelegate.swift in Sources */,
+				AC6D42E22429420500ABB6D7 /* MenuItem.swift in Sources */,
+				AC6D42E4242945B100ABB6D7 /* MenuItemCell.swift in Sources */,
 				AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
