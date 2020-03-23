@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31BB873D4DC2C8E7D7821B1B /* Pods_AyewamRestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */; };
 		AC30F060242268910007D72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F05F242268910007D72B /* AppDelegate.swift */; };
 		AC30F062242268910007D72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F061242268910007D72B /* SceneDelegate.swift */; };
 		AC30F067242268910007D72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30F065242268910007D72B /* Main.storyboard */; };
@@ -19,11 +20,14 @@
 		AC5F3E0E2425232100DF586B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E0D2425232100DF586B /* LoginViewController.swift */; };
 		AC5F3E102425264900DF586B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */; };
 		AC5F3E122425266000DF586B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F3E112425266000DF586B /* HomeViewController.swift */; };
+		AC6D42DC2428DA3600ABB6D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */; };
 		AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334B2423C12300235EF0 /* StartUpViewController.swift */; };
 		AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334F2423F4E300235EF0 /* IconInTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5804C1BA2C98B5E543884167 /* Pods-AyewamRestaurantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyewamRestaurantApp.debug.xcconfig"; path = "Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6973F675364F0444693A745D /* Pods-AyewamRestaurantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyewamRestaurantApp.release.xcconfig"; path = "Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AC30F05C242268910007D72B /* AyewamRestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyewamRestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC30F05F242268910007D72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC30F061242268910007D72B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +43,10 @@
 		AC5F3E0D2425232100DF586B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		AC5F3E112425266000DF586B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC70334B2423C12300235EF0 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		AC70334F2423F4E300235EF0 /* IconInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInTextField.swift; sourceTree = "<group>"; };
+		DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyewamRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +54,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BB873D4DC2C8E7D7821B1B /* Pods_AyewamRestaurantApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D35AB6989F731A2E6BA19FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E4EE679513776FCBAFCFB99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5804C1BA2C98B5E543884167 /* Pods-AyewamRestaurantApp.debug.xcconfig */,
+				6973F675364F0444693A745D /* Pods-AyewamRestaurantApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC30F053242268910007D72B = {
 			isa = PBXGroup;
 			children = (
 				AC30F05E242268910007D72B /* AyewamRestaurantApp */,
 				AC30F05D242268910007D72B /* Products */,
+				9E4EE679513776FCBAFCFB99 /* Pods */,
+				2D35AB6989F731A2E6BA19FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +108,7 @@
 				AC30F065242268910007D72B /* Main.storyboard */,
 				AC30F06A242268980007D72B /* LaunchScreen.storyboard */,
 				AC30F06D242268980007D72B /* Info.plist */,
+				AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */,
 				AC70334F2423F4E300235EF0 /* IconInTextField.swift */,
 			);
 			path = AyewamRestaurantApp;
@@ -124,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC30F070242268980007D72B /* Build configuration list for PBXNativeTarget "AyewamRestaurantApp" */;
 			buildPhases = (
+				6E1565BE12CF75298F709FE1 /* [CP] Check Pods Manifest.lock */,
 				AC30F058242268910007D72B /* Sources */,
 				AC30F059242268910007D72B /* Frameworks */,
 				AC30F05A242268910007D72B /* Resources */,
+				5FCFF13D2F222579DD6C2D88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,10 +210,53 @@
 				AC30F069242268980007D72B /* Assets.xcassets in Resources */,
 				AC30F077242280140007D72B /* SF-Pro-Text-Light.otf in Resources */,
 				AC30F067242268910007D72B /* Main.storyboard in Resources */,
+				AC6D42DC2428DA3600ABB6D7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FCFF13D2F222579DD6C2D88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1565BE12CF75298F709FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyewamRestaurantApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC30F058242268910007D72B /* Sources */ = {
@@ -340,6 +413,7 @@
 		};
 		AC30F071242268980007D72B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5804C1BA2C98B5E543884167 /* Pods-AyewamRestaurantApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AyewamRestaurantApp/AyewamRestaurantApp.entitlements;
@@ -359,6 +433,7 @@
 		};
 		AC30F072242268980007D72B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6973F675364F0444693A745D /* Pods-AyewamRestaurantApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AyewamRestaurantApp/AyewamRestaurantApp.entitlements;
