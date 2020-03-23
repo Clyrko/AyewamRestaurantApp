@@ -14,6 +14,8 @@ class HomeMenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.rowHeight = (tableView.bounds.width * 8) / 15
 
 
     }

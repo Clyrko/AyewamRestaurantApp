@@ -147,13 +147,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="138" id="VBY-yb-g9o">
-                                <rect key="frame" x="0.0" y="28" width="414" height="138"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="183" id="VBY-yb-g9o" customClass="MenuItemCell" customModule="AyewamRestaurantApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VBY-yb-g9o" id="xpU-k5-Rud">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="183"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BB7-nG-snY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="183"/>
+                                        </imageView>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyW-Rc-yPT">
+                                            <rect key="frame" x="0.0" y="123" width="414" height="60"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="o6m-EC-swi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHz-Lv-ho7">
+                                                        <rect key="frame" x="16" y="0.0" width="382" height="60"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <color key="textColor" name="Tint"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="kHz-Lv-ho7" secondAttribute="trailing" constant="16" id="D5h-Pf-KB3"/>
+                                                    <constraint firstItem="kHz-Lv-ho7" firstAttribute="top" secondItem="o6m-EC-swi" secondAttribute="top" id="i05-dE-bfO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kHz-Lv-ho7" secondAttribute="bottom" id="iHT-Tv-TDk"/>
+                                                    <constraint firstItem="kHz-Lv-ho7" firstAttribute="leading" secondItem="o6m-EC-swi" secondAttribute="leading" constant="16" id="kFY-AB-iKh"/>
+                                                </constraints>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Rm0-LH-K6n"/>
+                                            </constraints>
+                                            <blurEffect style="dark"/>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="iyW-Rc-yPT" secondAttribute="trailing" id="9sK-ef-Atc"/>
+                                        <constraint firstItem="BB7-nG-snY" firstAttribute="leading" secondItem="xpU-k5-Rud" secondAttribute="leading" id="H0H-w2-hny"/>
+                                        <constraint firstAttribute="trailing" secondItem="BB7-nG-snY" secondAttribute="trailing" id="VAl-ka-lLY"/>
+                                        <constraint firstItem="BB7-nG-snY" firstAttribute="top" secondItem="xpU-k5-Rud" secondAttribute="top" id="Z8P-76-1Wh"/>
+                                        <constraint firstAttribute="bottom" secondItem="BB7-nG-snY" secondAttribute="bottom" id="f7G-oX-4Jh"/>
+                                        <constraint firstItem="iyW-Rc-yPT" firstAttribute="leading" secondItem="xpU-k5-Rud" secondAttribute="leading" id="jnQ-I1-41N"/>
+                                        <constraint firstAttribute="bottom" secondItem="iyW-Rc-yPT" secondAttribute="bottom" id="lST-JJ-LSe"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="menuItemImageView" destination="BB7-nG-snY" id="Kxu-q2-sU0"/>
+                                    <outlet property="menuItemLabel" destination="kHz-Lv-ho7" id="bhz-CH-wfS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
