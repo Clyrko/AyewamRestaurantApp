@@ -12,9 +12,18 @@ class ImageCell: UITableViewCell {
     
     @IBOutlet weak var menuImageView: UIImageView!
     
-    func populate(with image: UIImage) {
+    func populate(with imagePath: String) {
         
-        menuImageView.image = image
+        let url = URL(string: imagePath)!
+        do {
+            
+            let data = try Data(contentsOf: url)
+            menuImageView.image = UIImage(data: data)
+            
+        } catch {
+            
+            print(error)
+        }
         
     }
 }

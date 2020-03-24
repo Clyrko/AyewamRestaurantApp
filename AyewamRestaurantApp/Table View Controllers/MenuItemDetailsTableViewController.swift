@@ -25,7 +25,9 @@ class MenuItemDetailsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
         
-        
+        let imageCell = cell as? ImageCell
+        let imagePath = menuImagePaths[indexPath.row]
+        imageCell?.populate(with: imagePath)
         
         return cell
     }
