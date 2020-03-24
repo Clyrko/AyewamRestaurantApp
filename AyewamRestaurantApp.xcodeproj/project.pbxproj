@@ -25,6 +25,7 @@
 		AC6D42E4242945B100ABB6D7 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D42E3242945B100ABB6D7 /* MenuItemCell.swift */; };
 		AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334B2423C12300235EF0 /* StartUpViewController.swift */; };
 		AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70334F2423F4E300235EF0 /* IconInTextField.swift */; };
+		AC72631B242A2DB9004B1D78 /* NewMenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC72631A242A2DB9004B1D78 /* NewMenuItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AC6D42E3242945B100ABB6D7 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		AC70334B2423C12300235EF0 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		AC70334F2423F4E300235EF0 /* IconInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInTextField.swift; sourceTree = "<group>"; };
+		AC72631A242A2DB9004B1D78 /* NewMenuItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMenuItemViewController.swift; sourceTree = "<group>"; };
 		DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyewamRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				AC5F3E0D2425232100DF586B /* LoginViewController.swift */,
 				AC5F3E0F2425264900DF586B /* ForgotPasswordViewController.swift */,
 				AC6D42DD24293EA700ABB6D7 /* HomeMenuTableViewController.swift */,
+				AC72631A242A2DB9004B1D78 /* NewMenuItemViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				AC6D42E22429420500ABB6D7 /* MenuItem.swift in Sources */,
 				AC6D42E4242945B100ABB6D7 /* MenuItemCell.swift in Sources */,
 				AC7033502423F4E300235EF0 /* IconInTextField.swift in Sources */,
+				AC72631B242A2DB9004B1D78 /* NewMenuItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
