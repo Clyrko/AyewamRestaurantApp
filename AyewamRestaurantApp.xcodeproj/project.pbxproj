@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31BB873D4DC2C8E7D7821B1B /* Pods_AyewamRestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0BB96A8BCC74B927DEC97C /* Pods_AyewamRestaurantApp.framework */; };
+		AC19C37A242A85D1009037AD /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19C379242A85D1009037AD /* ImageCell.swift */; };
 		AC30F060242268910007D72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F05F242268910007D72B /* AppDelegate.swift */; };
 		AC30F062242268910007D72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30F061242268910007D72B /* SceneDelegate.swift */; };
 		AC30F067242268910007D72B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30F065242268910007D72B /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		5804C1BA2C98B5E543884167 /* Pods-AyewamRestaurantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyewamRestaurantApp.debug.xcconfig"; path = "Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6973F675364F0444693A745D /* Pods-AyewamRestaurantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyewamRestaurantApp.release.xcconfig"; path = "Target Support Files/Pods-AyewamRestaurantApp/Pods-AyewamRestaurantApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC19C379242A85D1009037AD /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		AC30F05C242268910007D72B /* AyewamRestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyewamRestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC30F05F242268910007D72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC30F061242268910007D72B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				AC30F06D242268980007D72B /* Info.plist */,
 				AC6D42DB2428DA3600ABB6D7 /* GoogleService-Info.plist */,
 				AC70334F2423F4E300235EF0 /* IconInTextField.swift */,
+				AC19C379242A85D1009037AD /* ImageCell.swift */,
 			);
 			path = AyewamRestaurantApp;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				AC5F3E0E2425232100DF586B /* LoginViewController.swift in Sources */,
 				AC70334C2423C12300235EF0 /* StartUpViewController.swift in Sources */,
 				AC30F0802422C5010007D72B /* UIButtonExtension.swift in Sources */,
+				AC19C37A242A85D1009037AD /* ImageCell.swift in Sources */,
 				AC30F07524227F600007D72B /* Theme.swift in Sources */,
 				AC30F060242268910007D72B /* AppDelegate.swift in Sources */,
 				AC30F062242268910007D72B /* SceneDelegate.swift in Sources */,

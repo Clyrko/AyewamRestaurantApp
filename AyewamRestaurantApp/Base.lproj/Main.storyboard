@@ -205,7 +205,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Menu Items" id="Nsg-Ye-sHq">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="6E0-75-ygL">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="6E0-75-ygL">
                             <color key="tintColor" name="Tint"/>
                             <connections>
                                 <segue destination="kXU-cD-bqs" kind="show" id="bVS-Jt-H1e"/>

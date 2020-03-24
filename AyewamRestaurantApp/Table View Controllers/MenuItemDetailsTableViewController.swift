@@ -10,10 +10,27 @@ import UIKit
 
 class MenuItemDetailsTableViewController: UITableViewController {
     
-    var menuitem: MenuItem!
+    var menuItem: MenuItem!
+    var menuImagePaths: [String] { return menuItem.allImagePaths }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuImagePaths.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
+        
+        
+        
+        return cell
+    }
+    
+    
 }
+
+
