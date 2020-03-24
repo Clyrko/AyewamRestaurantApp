@@ -64,5 +64,7 @@
 	<array>
 		<string>SF-Pro-Text-Light.otf</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We need access to photos.</string>
 </dict>
 </plist>

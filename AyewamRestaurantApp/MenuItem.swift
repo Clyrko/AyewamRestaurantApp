@@ -10,8 +10,11 @@ import Foundation
 
 struct MenuItem: Decodable {
     
-    let imagePath: String
+    let mainImagePath: String
     let title: String
+    let otherImagePaths: [String]
+    
+    var allImagePaths: [String] { return [mainImagePath] + otherImagePaths }
     
     
 }

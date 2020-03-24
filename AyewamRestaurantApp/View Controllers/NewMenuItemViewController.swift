@@ -21,6 +21,7 @@ class NewMenuItemViewController: UIViewController {
     private lazy var pickerController: UIImagePickerController = {
         
         let picker = UIImagePickerController()
+        
         picker.sourceType = .photoLibrary
         
         return picker
@@ -31,7 +32,8 @@ class NewMenuItemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        pickerController.delegate = self
+        
     }
     
     @IBAction func dismissKeyboard() {
@@ -52,7 +54,7 @@ class NewMenuItemViewController: UIViewController {
     
 }
 
-extension NewMenuItemViewController: UIImagePickerControllerDelegate {
+extension NewMenuItemViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true)
@@ -61,6 +63,6 @@ extension NewMenuItemViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
         guard let image = info[.originalImage] as? UIImage else { return }
-        currentButton?.setImage(image, for: .normal)
+        currentButton!.setBackgroundImage(image, for: .normal)
     }
 }
