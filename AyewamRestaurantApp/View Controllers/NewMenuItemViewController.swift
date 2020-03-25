@@ -18,6 +18,8 @@ class NewMenuItemViewController: UIViewController {
     
     private var currentButton: UIButton?
     
+    var firestore: FirestoreService!
+    
     private lazy var pickerController: UIImagePickerController = {
         
         let picker = UIImagePickerController()
@@ -48,6 +50,7 @@ class NewMenuItemViewController: UIViewController {
     }
     
     @IBAction func saveMenuItem() {
+        
         
         
     }

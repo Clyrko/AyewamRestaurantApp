@@ -11,15 +11,19 @@ import UIKit
 class HomeMenuTableViewController: UITableViewController {
     
     var menuItems = [MenuItem]()
+    
+    let firestore = FirestoreService.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = (tableView.bounds.width * 8) / 15
 
-
+        firestore.listen { [weak self] (menuItems) in
+            self?.menuItems = menuItems
+            self?.tableView.reloadData()
+         }
     }
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -38,5 +42,16 @@ class HomeMenuTableViewController: UITableViewController {
         return cell
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let newMenuItemVC = segue.destination as? NewMenuItemViewController {
+            
+            newMenuItemVC.firestore = firestore
+            
+        } else if let menuItemDetailsVC = segue.destination as? MenuItemDetailsTableViewController, let menuItem = sender as? MenuItem {
+            
+            menuItemDetailsVC.menuItem = menuItem
+            
+        }
+    }
 }
