@@ -7,13 +7,19 @@
 //
 
 import Foundation
+import FirebaseStorage
 
 class StorageService {
     
     private init() {}
     static let shared = StorageService()
     
+    private let storage = Storage.storage()
+    private lazy var imagesReference = storage.reference().child("images")
     
-    
+    func upload(_ image: UIImage, completion: (String) -> Void) {
+        
+        let imageRef = imagesReference.child("images/\(Date().timeIntervalSince1970).jpeg")
+    }
     
 }
