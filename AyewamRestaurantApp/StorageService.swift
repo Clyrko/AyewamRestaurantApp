@@ -19,7 +19,7 @@ class StorageService {
     
     func upload(_ image: UIImage, completion: @escaping (String) -> Void) {
         
-        let imageRef = imagesReference.child("images/\(Date().timeIntervalSince1970).jpeg")
+        let imageRef = imagesReference.child("images/\(UUID().uuidString).jpeg")
         
         guard let imageData = image.jpegData(compressionQuality: 0.5) else { return }
         
@@ -52,13 +52,13 @@ class StorageService {
         var imagePaths = [String]()
         for image in images {
             
+            semaphore.wait()
             upload(image) { (urlPath) in
                 imagePaths.append(urlPath)
                 semaphore.signal()
             }
         }
-        
-        semaphore.wait()
+
         completion(imagePaths)
         
     }

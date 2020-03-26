@@ -52,7 +52,20 @@ class NewMenuItemViewController: UIViewController {
     
     @IBAction func saveMenuItem() {
         
+        guard let title = titleTextField.text,
+            let mainImage = mainImageButton.backgroundImage(for: .normal),
+            let firstImage = firstImageButton.backgroundImage(for: .normal),
+            let secondImage = secondImageButton.backgroundImage(for: .normal)
+            else { return }
         
+        storage.bulkUpload([mainImage, firstImage, secondImage]) { [weak self] (urlPaths) in
+            let menuItem = MenuItem(mainImagePath: urlPaths[0], title: title, otherImagePaths: Array(urlPaths.suffix(from: 0)))
+            
+            self?.firestore.save(menuItem) { (result) in
+                print(result)
+                self?.navigationController?.popViewController(animated: true)
+            }
+        }
         
     }
     

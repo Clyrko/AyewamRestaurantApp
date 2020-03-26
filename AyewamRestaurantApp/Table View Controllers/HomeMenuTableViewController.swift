@@ -17,9 +17,11 @@ class HomeMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        firestore?.configure()
+        
         tableView.rowHeight = (tableView.bounds.width * 8) / 15
 
-        firestore.listen { [weak self] (menuItems) in
+        firestore!.listen { [weak self] (menuItems) in
             self?.menuItems = menuItems
             self?.tableView.reloadData()
          }

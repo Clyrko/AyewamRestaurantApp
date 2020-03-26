@@ -12,10 +12,15 @@ import FirebaseFirestore
 class FirestoreService {
     
     private init() {}
-    static let shared = FirestoreService()
+    private(set) static var shared: FirestoreService!
     
     private let database = Firestore.firestore()
     private lazy var menuItemsReference = database.collection("menuItems")
+    
+    func configure() {
+        
+        FirestoreService.shared = FirestoreService()
+    }
     
     func save(_ menuItem: MenuItem, completion: @escaping (Result<Bool, NSError>) -> Void) {
         
