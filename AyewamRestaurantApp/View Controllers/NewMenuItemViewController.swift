@@ -19,6 +19,7 @@ class NewMenuItemViewController: UIViewController {
     private var currentButton: UIButton?
     
     var firestore: FirestoreService!
+    let storage = StorageService.shared
     
     private lazy var pickerController: UIImagePickerController = {
         
