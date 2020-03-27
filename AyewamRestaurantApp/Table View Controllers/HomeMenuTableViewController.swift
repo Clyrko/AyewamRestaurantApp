@@ -13,15 +13,17 @@ class HomeMenuTableViewController: UITableViewController {
     var menuItems = [MenuItem]()
     
     let firestore = FirestoreService.shared
+    
+    let imageCache = ImageCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firestore?.configure()
+        firestore.configure()
         
         tableView.rowHeight = (tableView.bounds.width * 8) / 15
 
-        firestore!.listen { [weak self] (menuItems) in
+        firestore.listen { [weak self] (menuItems) in
             self?.menuItems = menuItems
             self?.tableView.reloadData()
          }
@@ -37,6 +39,7 @@ class HomeMenuTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItemCell", for: indexPath)
         
         let menuItemCell = cell as? MenuItemCell
+        menuItemCell?.imageCache = imageCache
         let menuItem = menuItems[indexPath.row]
         
         menuItemCell?.populate(with: menuItem)
@@ -53,7 +56,14 @@ class HomeMenuTableViewController: UITableViewController {
         } else if let menuItemDetailsVC = segue.destination as? MenuItemDetailsTableViewController, let menuItem = sender as? MenuItem {
             
             menuItemDetailsVC.menuItem = menuItem
+            menuItemDetailsVC.imageCache = imageCache
             
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuItem = menuItems[indexPath.row]
+        performSegue(withIdentifier: "segue", sender: menuItem)
+    }
+    
 }

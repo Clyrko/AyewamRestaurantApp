@@ -34,6 +34,9 @@ class NewMenuItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(firestore)
+        print(storage)
 
         pickerController.delegate = self
         
@@ -59,7 +62,7 @@ class NewMenuItemViewController: UIViewController {
             else { return }
         
         storage.bulkUpload([mainImage, firstImage, secondImage]) { [weak self] (urlPaths) in
-            let menuItem = MenuItem(mainImagePath: urlPaths[0], title: title, otherImagePaths: Array(urlPaths.suffix(from: 0)))
+            let menuItem = MenuItem(mainImagePath: urlPaths[0], title: title, otherImagePaths: [urlPaths[1], urlPaths[2]])
             
             self?.firestore.save(menuItem) { (result) in
                 print(result)

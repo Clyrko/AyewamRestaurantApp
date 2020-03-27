@@ -12,10 +12,13 @@ class MenuItemDetailsTableViewController: UITableViewController {
     
     var menuItem: MenuItem!
     var menuImagePaths: [String] { return menuItem.allImagePaths }
+    var imageCache: ImageCache!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.rowHeight = tableView.bounds.width
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,6 +29,7 @@ class MenuItemDetailsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
         
         let imageCell = cell as? ImageCell
+        imageCell?.imageCache = imageCache
         let imagePath = menuImagePaths[indexPath.row]
         imageCell?.populate(with: imagePath)
         

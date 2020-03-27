@@ -47,20 +47,21 @@ class StorageService {
     
     func bulkUpload(_ images: [UIImage], completion: @escaping ([String]) -> Void) {
         
-        let semaphore = DispatchSemaphore(value: images.count)
-        
         var imagePaths = [String]()
+        
+        var counter = 0
+        
         for image in images {
             
-            semaphore.wait()
             upload(image) { (urlPath) in
                 imagePaths.append(urlPath)
-                semaphore.signal()
+                counter += 1
+                if counter == images.count {
+                    
+                    completion(imagePaths)
+                    
+                }                
             }
         }
-
-        completion(imagePaths)
-        
     }
-    
 }
